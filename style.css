@@ -1,0 +1,139 @@
+@media screen and (min-width:1000px) {
+    .intro_wrapper{
+        grid-template-columns: 30% 1fr;
+    }
+}
+
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+nav {
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    height: 75px;
+    background-color: white;
+    width: 100%;
+}
+
+nav ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+}
+
+nav ul li:first-child{
+    margin-right: auto;
+    padding-left: 2.4em;
+}
+
+nav ul li:not(:first-child){
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding-right: 1em;
+    color: rgb(148, 147, 153);
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+
+.restaurant_dropdown{
+    color: rgb(148, 147, 153);
+    /* text-align: right; */
+}
+
+.dropdown_title{
+    text-align: right;
+    padding-right: 1em;
+}
+
+.restaurants_content{
+    text-align: right;
+}
+
+.restaurant_dropdown:hover{
+    color: black;
+}
+
+.restaurant_dropdown:hover .restaurants_content{
+    display: block;
+    color: rgb(111, 0, 75);
+}
+
+.restaurant_dropdown:hover .dropdown_title{
+    color: rgb(111, 0, 75);
+}
+
+.restaurants_content{
+    display:none;
+    background-color: white;
+    padding: 1em;
+}
+
+.restaurants_content a{
+    padding: 0.5em 0.5em;
+}
+/* .restaurants_content a:last-child{
+    padding-bottom: 1em;
+} */
+
+.restaurants_content a:hover{
+    color: black;
+    display: block;
+}
+
+.intro_wrapper{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    gap: 0px;
+}
+
+.intro {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(111, 0, 75);
+}
+
+.intro > h3 {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 50px;
+    color: white;
+} 
+
+.intro > p {
+    padding: 1em;
+    font-size: 1.4em;
+    color: white;
+}
+
+.intro_image{
+    object-fit: cover;
+}
+
+button{
+    background-color: white;
+    margin: 0;
+    position: relative;
+    color:rgb(111, 0, 75);
+    font-size: 24px;
+    border-radius: 25px;
+    border-width: 0;
+    padding: .5em 1em .5em 1em; 
+}
+
+button:hover{
+    background-color: transparent;
+    color: white;
+}
