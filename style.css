@@ -1,4 +1,4 @@
-@media screen and (min-width:1000px) {
+@media screen and (min-width:700px) {
     .intro_wrapper{
         grid-template-columns: 30% 1fr;
     }
@@ -93,8 +93,10 @@ nav ul li a:hover{
 
 .intro_wrapper{
     display: grid;
-    grid-template-columns: 45% 1fr;
     gap: 0px;
+    grid-template-columns: 33% max-content;
+    grid-template-areas: 
+    "intro intro_image";
 }
 
 .intro {
@@ -103,6 +105,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     background-color: rgb(111, 0, 75);
+    grid-area: intro;
 }
 
 .intro > h3 {
@@ -120,6 +123,7 @@ nav ul li a:hover{
 
 .intro_image{
     object-fit: cover;
+    grid-area: intro_image;
 }
 
 button{
@@ -136,4 +140,20 @@ button{
 button:hover{
     background-color: transparent;
     color: white;
+}
+
+.restaurant_icons{
+    background-color: rgb(255, 246, 235);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 110px;
+}
+
+.restaurant_icons > *{
+    margin: 25px;
 }
